@@ -29,6 +29,7 @@ class Render extends Symbol {
 
     call: Symbol['call'] = async (_ctx, vals, callback, _pulse) => {
         const steps: Instruction[] = vals.steps
+        console.log('instructions', steps)
         const imageBuffer = drawLinesFromInstructions(steps)
 
         return callback({ result: base64Encode(imageBuffer) })
