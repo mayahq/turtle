@@ -15,7 +15,7 @@ class PenDown extends Symbol {
             accumulated: {
                 type: 'eval' as 'pulse' | 'eval',
                 description: 'The new list of steps so far, in order.',
-                displayName: 'Result',
+                displayName: 'Accumulated',
             },
         },
         editorProperties: {

@@ -49,7 +49,7 @@
         "outputs": [
             {
                 "name": "accumulated",
-                "displayName": "Result",
+                "displayName": "Accumulated",
                 "type": "eval",
                 "linkType": "eval"
             },
@@ -85,7 +85,7 @@
         "outputs": [
             {
                 "name": "renderResult",
-                "displayName": "Result",
+                "displayName": "Accumulated",
                 "type": "eval",
                 "linkType": "eval"
             },
@@ -121,7 +121,7 @@
         "outputs": [
             {
                 "name": "accumulated",
-                "displayName": "Result",
+                "displayName": "Accumulated",
                 "type": "eval",
                 "linkType": "eval"
             },
@@ -157,7 +157,7 @@
         "outputs": [
             {
                 "name": "accumulated",
-                "displayName": "Result",
+                "displayName": "Accumulated",
                 "type": "eval",
                 "linkType": "eval"
             },

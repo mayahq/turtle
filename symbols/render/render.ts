@@ -16,7 +16,7 @@ class Render extends Symbol {
             renderResult: {
                 type: 'eval' as 'pulse' | 'eval',
                 description: 'Base64 representation of resulting image after rendering the steps.',
-                displayName: 'Result',
+                displayName: 'Accumulated',
             },
         },
         editorProperties: {
