@@ -1,0 +1,7 @@
+{
+	"moduleName": "turtle",
+	"repository": "https://github.com/mayahq/turtle",
+	"symbols": {
+		"move": "./move/move.ts"
+	}
+}
