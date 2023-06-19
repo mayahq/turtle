@@ -13,7 +13,7 @@ class Render extends Symbol {
             },
         },
         outputSchema: {
-            result: {
+            renderResult: {
                 type: 'eval' as 'pulse' | 'eval',
                 description: 'Base64 representation of resulting image after rendering the steps.',
                 displayName: 'Result',
@@ -32,7 +32,7 @@ class Render extends Symbol {
         console.log('instructions', steps)
         const imageBuffer = drawLinesFromInstructions(steps)
 
-        return callback({ result: base64Encode(imageBuffer) })
+        return callback({ renderResult: base64Encode(imageBuffer) })
     }
 }
 

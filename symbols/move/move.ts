@@ -22,7 +22,7 @@ class Move extends Symbol {
             },
         },
         outputSchema: {
-            result: {
+            accumulated: {
                 type: 'eval' as 'pulse' | 'eval',
                 description: 'The new list of steps so far, in order.',
                 displayName: 'Result',
@@ -42,7 +42,7 @@ class Move extends Symbol {
         await ctx.set('turtleSteps', steps)
 
         // console.log('result', result)
-        return callback({ result: steps })
+        return callback({ accumulated: steps })
     }
 }
 
