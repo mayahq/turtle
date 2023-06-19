@@ -8,6 +8,8 @@ class Render extends Symbol {
                 allowedTypes: ['procedure', 'pulse', 'json'],
                 description: 'The list of steps to render, in order.',
                 displayName: 'Steps',
+                defaultType: 'pulse',
+                defaultValue: 'accumulated',
             },
         },
         outputSchema: {

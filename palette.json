@@ -1,0 +1,176 @@
+[
+    {
+        "type": "gh:mayahq/turtle/move",
+        "paletteLabel": "move",
+        "inputs": [
+            {
+                "name": "pulse",
+                "type": "basepulse"
+            },
+            {
+                "name": "magnitude",
+                "displayName": "Magnitude",
+                "allowLink": true,
+                "allowedTypes": [
+                    "procedure",
+                    "pulse",
+                    "number"
+                ],
+                "defaultType": "number",
+                "defaultValue": 0,
+                "description": "How much to read"
+            },
+            {
+                "name": "turn",
+                "displayName": "Turn",
+                "allowLink": true,
+                "allowedTypes": [
+                    "procedure",
+                    "pulse",
+                    "number"
+                ],
+                "defaultType": "number",
+                "defaultValue": 0,
+                "description": "The degrees by which to turn to the right."
+            },
+            {
+                "name": "accumulated",
+                "displayName": "Accumulated",
+                "allowLink": true,
+                "allowedTypes": [
+                    "pulse",
+                    "procedure",
+                    "json"
+                ],
+                "defaultType": "json",
+                "defaultValue": {},
+                "description": "List of steps upto this point."
+            }
+        ],
+        "outputs": [
+            {
+                "name": "result",
+                "displayName": "Result",
+                "type": "eval",
+                "linkType": "eval"
+            },
+            {
+                "name": "pulse",
+                "displayName": "Pulse out",
+                "type": "pulse",
+                "linkType": "pulse"
+            }
+        ]
+    },
+    {
+        "type": "gh:mayahq/turtle/render",
+        "paletteLabel": "render",
+        "inputs": [
+            {
+                "name": "pulse",
+                "type": "basepulse"
+            },
+            {
+                "name": "steps",
+                "displayName": "Steps",
+                "allowLink": true,
+                "allowedTypes": [
+                    "procedure",
+                    "pulse",
+                    "json"
+                ],
+                "defaultType": "json",
+                "defaultValue": {},
+                "description": "The list of steps to render, in order."
+            }
+        ],
+        "outputs": [
+            {
+                "name": "result",
+                "displayName": "Result",
+                "type": "eval",
+                "linkType": "eval"
+            },
+            {
+                "name": "pulse",
+                "displayName": "Pulse out",
+                "type": "pulse",
+                "linkType": "pulse"
+            }
+        ]
+    },
+    {
+        "type": "gh:mayahq/turtle/pen_down",
+        "paletteLabel": "penDown",
+        "inputs": [
+            {
+                "name": "pulse",
+                "type": "basepulse"
+            },
+            {
+                "name": "accumulated",
+                "displayName": "Accumulated",
+                "allowLink": true,
+                "allowedTypes": [
+                    "pulse",
+                    "procedure",
+                    "json"
+                ],
+                "defaultType": "json",
+                "defaultValue": {},
+                "description": "List of steps upto this point."
+            }
+        ],
+        "outputs": [
+            {
+                "name": "result",
+                "displayName": "Result",
+                "type": "eval",
+                "linkType": "eval"
+            },
+            {
+                "name": "pulse",
+                "displayName": "Pulse out",
+                "type": "pulse",
+                "linkType": "pulse"
+            }
+        ]
+    },
+    {
+        "type": "gh:mayahq/turtle/pen_up",
+        "paletteLabel": "penUp",
+        "inputs": [
+            {
+                "name": "pulse",
+                "type": "basepulse"
+            },
+            {
+                "name": "accumulated",
+                "displayName": "Accumulated",
+                "allowLink": true,
+                "allowedTypes": [
+                    "pulse",
+                    "procedure",
+                    "json"
+                ],
+                "defaultType": "json",
+                "defaultValue": {},
+                "description": "List of steps upto this point."
+            }
+        ],
+        "outputs": [
+            {
+                "name": "result",
+                "displayName": "Result",
+                "type": "eval",
+                "linkType": "eval"
+            },
+            {
+                "name": "pulse",
+                "displayName": "Pulse out",
+                "type": "pulse",
+                "linkType": "pulse"
+            }
+        ]
+    }
+]

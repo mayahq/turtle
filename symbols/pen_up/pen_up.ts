@@ -7,6 +7,8 @@ class PenUp extends Symbol {
                 allowedTypes: ['pulse', 'procedure', 'json'],
                 description: 'List of steps upto this point.',
                 displayName: 'Accumulated',
+                defaultType: 'pulse',
+                defaultValue: 'accumulated',
             },
         },
         outputSchema: {
@@ -25,7 +27,8 @@ class PenUp extends Symbol {
     }
 
     call: Symbol['call'] = async (ctx, vals, callback, _pulse) => {
-        const steps = [...vals.accumulated, { type: 'penup' }]
+        const accumulated = Array.isArray(vals.accumulated) ? vals.accumulated : []
+        const steps = [...accumulated, { type: 'penup' }]
         await ctx.set('turtleSteps', steps)
 
         // console.log('result', result)
